@@ -1,0 +1,306 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background: var(--light);
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Varela Round", sans-serif;
+  line-height: 1.2;
+}
+
+/* INDEX.HTML */
+
+/* NAVBAR */
+#navbar {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 99;
+}
+
+#navbar-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  min-width: 5rem;
+  max-width: 10rem;
+}
+
+.nav-links ul {
+  display: flex;
+  padding-left: 5rem;
+  gap: 1.8rem;
+}
+
+.nav-links a {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0.6rem;
+}
+
+.nav-links a:hover {
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 5px;
+}
+
+.nav-links a.active {
+  background-color: var(--primary);
+  color: #fff;
+  border-radius: 5px;
+}
+
+.nav-links a.active:hover {
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 5px;
+}
+
+.social-icons ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.social-icons a {
+  color: var(--dark);
+}
+
+.social-icons a:hover {
+  color: var(--primary);
+}
+
+/* SHOWCASE */
+#showcase {
+  background-image: url(../img/rowing.jpeg);
+  height: 60vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#showcase::before {
+  background-color: #333;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+}
+
+#showcase .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  z-index: 1;
+}
+
+#showcase .showcase-leftside {
+  color: #fff;
+  justify-self: start;
+  align-self: center;
+  z-index: 3;
+}
+
+.showcase-leftside h1 {
+  font-size: 4rem;
+}
+
+.showcase-leftside p {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* ARTICLES */
+#articles .container h1 {
+  font-size: 4rem;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+}
+#article-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 5rem;
+}
+
+footer .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  column-gap: 2rem;
+}
+
+footer .container > div:not(:last-child) {
+  padding: 2rem 0;
+}
+
+.footer-content1 img {
+  width: 100%;
+  height: auto;
+  min-width: 5rem;
+  max-width: 12rem;
+}
+
+.footer-content2 form input,
+.footer-content2 form button {
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  width: 100%;
+}
+
+.footer-content3 h3 {
+  padding-bottom: 0.2rem;
+}
+
+.footer-content3 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-content3 a {
+  color: #fff;
+}
+
+.footer-content4 {
+  justify-self: start;
+}
+
+.footer-content4 h3 {
+  padding-bottom: 0.2rem;
+}
+
+.footer-content4 ul {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.footer-content4 i {
+  color: #fff;
+}
+
+.footer-content5 {
+  grid-row-start: 2;
+  grid-column: 1 / span 4;
+  font-size: 2rem;
+  text-align: center;
+  background-color: #333;
+  align-self: center;
+  padding: 0.5rem;
+}
+
+/* ARTICLE.HTMl */
+
+#articlepage-container {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  grid-template-rows: 1fr 3fr auto;
+  grid-template-areas:
+    "content  joinclub"
+    "content  categories"
+    "content null";
+  gap: 1.5rem;
+  align-items: start;
+  margin-top: 3rem;
+}
+
+.articlepage-content {
+  grid-area: content;
+  padding: 2rem;
+}
+
+.articlepage-content .article-meta {
+  padding: 0.3rem;
+  background-color: rgba(119, 136, 153, 0.15);
+}
+
+.article-meta small {
+  display: flex;
+  align-items: center;
+}
+
+.article-meta span {
+  margin-left: auto;
+  background-color: lightskyblue;
+  border-radius: 25%;
+  padding: 2px;
+}
+
+.articlepage-joinclub {
+  grid-area: joinclub;
+  background-color: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  color: #fff;
+  height: 100%;
+}
+
+.articlepage-joinclub button {
+  padding: 1rem;
+}
+
+.articlepage-categories {
+  grid-area: categories;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.articlepage-categories li {
+  border-bottom: dashed #333 1px;
+  width: 90%;
+}

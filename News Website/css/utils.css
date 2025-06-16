@@ -1,0 +1,106 @@
+/* ROOT */
+:root {
+  --primary: #e76f51;
+  --secondary: #2a9d8f;
+  --light: #f8f9fa;
+  --dark: #6c757d;
+  --max-width: 1100px;
+}
+
+/* CONTAINER */
+.container {
+  max-width: var(--max-width);
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* BUTTONS */
+.button {
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 0.4rem 1.6rem;
+  text-align: center;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button-block {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.button-primary {
+  background-color: var(--primary);
+}
+
+.button-secondary {
+  background-color: var(--secondary);
+}
+
+.button-light {
+  background-color: var(--light);
+}
+
+.button-dark {
+  background-color: var(--dark);
+}
+
+/* BACKGROUNDS */
+
+.bg-primary {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+  color: #fff;
+}
+
+.bg-light {
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+.bg-dark {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+/* BADGES */
+
+.badge {
+  padding: 0.5rem;
+  border-radius: 25%;
+  margin: 1rem 0;
+  font-size: 1.3rem;
+}
+
+.badge-purple {
+  background-color: rgb(155, 93, 225);
+}
+
+.badge-gold {
+  background-color: gold;
+}
+
+.badge-lightskyblue {
+  background-color: lightskyblue !important;
+}
+
+/* CARDS */
+.card {
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.card-parimary {
+  background-color: var(--primary);
+  padding: 1rem;
+}

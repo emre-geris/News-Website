@@ -1,0 +1,83 @@
+@media (max-width: 768px) {
+  html {
+    font-size: 56.25%;
+  }
+
+  /* INDEX.HTML */
+  /* NAVBAR */
+  #navbar .social-icons {
+    display: none;
+  }
+
+  /*SHOWCASE */
+  #showcase .container {
+    grid-template-columns: 1fr;
+  }
+
+  .showcase-leftside {
+    justify-self: center;
+  }
+
+  .showcase-rightside {
+    display: none;
+  }
+
+  /* ARTICLES */
+  #article-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* FOOTER */
+  footer .container {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: repeat(5, auto) !important;
+  }
+
+  footer .container > div {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-content2 * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-content3 ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-content4 {
+    justify-self: center;
+  }
+
+  .footer-content4 ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-content5 {
+    grid-column: 1;
+    grid-row-start: 5;
+  }
+
+  /* ARTICLE PAGE */
+
+  #articlepage-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "content"
+      "joinclub"
+      "categories";
+    gap: 1rem;
+  }
+}
