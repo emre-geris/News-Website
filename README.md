@@ -3,7 +3,6 @@
 This is a responsive news website project built using **HTML** and **CSS**.  
 It was originally made as part of a Udemy course by **Sadık Turan**.  
 While the general concept and layout are based on the course content, I wrote all the code myself and made several modifications and design improvements.
-
 🎯 The goal was to create a clean, elegant, and modern news website layout that looks great on all screen sizes — especially optimized for mobile devices under `762px`.
 
 ---
@@ -43,6 +42,9 @@ While the general concept and layout are based on the course content, I wrote al
 
 ## ⚠️ Note
 
+> 📚 Inspired by a project in this Udemy course:  
+> [Komple Web Developer Eğitimi (in Turkish)](https://www.udemy.com/course/komple-web-developer-kursu/?couponCode=KEEPLEARNING)  
+> I rewrote the code from scratch and made my own improvements.
 > 📌 This project was originally built for learning purposes.  
 > 🧠 This README file was generated with the assistance of AI to improve clarity and presentation.
 
