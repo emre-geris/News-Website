@@ -64,6 +64,6 @@ While the general concept and layout are based on the course content, I wrote al
 
 ## 👨‍💻 About the Developer
 
-I'm **Emre Geriş** — a 3rd-year Computer Engineering student at **Istanbul Gedik University**.
+I'm **Emre Geriş** — a 2nd-year Computer Engineering student at **Istanbul Gedik University**.
 I’m passionate about **web development** and currently focusing on building responsive and clean user interfaces with **HTML**, **CSS**, and soon **JavaScript**.
 
