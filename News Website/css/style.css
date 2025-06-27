@@ -83,14 +83,19 @@ h6 {
 }
 
 .nav-links a:hover {
-  background: var(--light);
-  color: var(--dark);
-  border-radius: 5px;
+  color: var(--primary);
 }
 
 .nav-links a.active {
   background-color: var(--primary);
   color: #fff;
+  border-radius: 5px;
+
+}
+
+.nav-links a.active:hover {
+  background: var(--light);
+  color: var(--dark);
   border-radius: 5px;
 }
 
